@@ -1,0 +1,1 @@
+C:\Users\Pasha\Documents\GitHub\TicTacToe\TicTacToe\TicTacToeClient\bin\Debug\TicTacToeClient.exe.config
