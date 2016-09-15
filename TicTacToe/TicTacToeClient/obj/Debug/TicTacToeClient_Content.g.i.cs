@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("index.html")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("scripts/jquery-1.6.4-vsdoc.js")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("scripts/jquery-1.6.4.js")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("scripts/jquery-1.6.4.min.js")]
