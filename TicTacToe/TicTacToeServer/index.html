@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script src="/scripts/jquery-3.1.0.min.js"></script>
+    <script src="/scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script src="/signalr/hubs" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            var game = $.connection.game;
+
+            game.client.registerComplete = function (message) {
+                $('#debug').append('<li>' + message  + '</li>');
+            };
+
+            $("#registerName").click(function () {
+                game.server.registersPlayer($('#gameName').val());
+            });
+
+            $.connection.hub.start().done();
+
+      });
+    </script>
+
+    <div>
+        <div id="register">
+            <strong>Your Name:</strong>
+            <br />
+            <input type="text" class="input" id="gameName" />
+            <input type="button" class="button" id="registerName" value="Play" />
+        </div>
+        <fieldset>
+            <legend>Debug message</legend>
+            <ul id="debug"></ul>
+        </fieldset>
+    </div>
+</body>
+</html>
